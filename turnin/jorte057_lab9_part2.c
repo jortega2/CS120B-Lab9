@@ -38,14 +38,8 @@ void tick() {
 			if ( (~PINA & 0x07)  == 0x01){
 				state = wait2;
 			} else if ((~PINA & 0x07) == 0x02){
-				/*if (i < 7){{
-					i++;
-				}*/
 				state = inc;
 			} else if ((~PINA & 0x07) == 0x04){
-				/*if (i > 0){
-					i--;
-				}*/
 				state = dec;
 			} else {
 				state = on;
